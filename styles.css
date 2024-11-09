@@ -58,7 +58,7 @@ header {
     color: var(--accent-color);
 }
 
-/* Sección de Bienvenida (Home) */
+/* home */
 #home-section {
     display: flex;
     justify-content: center;
@@ -126,7 +126,7 @@ header {
     margin-bottom: 20px;
 }
 
-/* Botón de CV */
+/* boton */
 .btn button {
     background-color: var(--accent-color);
     border: none;
@@ -141,12 +141,13 @@ header {
     background-color: #f197a3;
 }
 
-/* Sección "About Me" */
+/* about me */
 #about-section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 60px;
+    background-color: #f3f3f3;
 }
 
 .about-container {
@@ -155,7 +156,7 @@ header {
     align-items: flex-start;
     background: white;
     border-radius: 15px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     padding: 40px;
     width: 80%;
     max-width: 900px;
@@ -163,8 +164,8 @@ header {
 }
 
 .about-image img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--accent-color);
@@ -183,28 +184,44 @@ header {
     margin-bottom: 20px;
 }
 
-.social-links {
+.interests {
     display: flex;
     gap: 20px;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-.social-links a {
-    color: var(--accent-color);
-    font-size: 1.5rem;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #f197a3;
-}
-
-/* Sección de Habilidades (Skills) */
-#skills-section {
-    padding: 60px 20px;
+.interest-item {
     text-align: center;
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+.interest-item i {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+
+
+/* skills */
+#skills-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
     background-color: #f3f3f3;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
 }
 
 .skills-grid {
@@ -212,14 +229,14 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
-    max-width: 900px;
-    margin: auto;
+    max-width: 800px;
+    margin-top: 20px;
 }
 
 .skill-circle {
     position: relative;
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,7 +293,7 @@ header {
     color: var(--main-color);
 }
 
-/* Sección de Contacto */
+/* contact */
 #contact-section {
     background-color: #604f6f;
     padding: 60px 20px;
@@ -326,7 +343,7 @@ form button:hover {
     background-color: #f197a3;
 }
 
-/* Iconos Sociales */
+/* iconos */
 .social-icons {
     display: flex;
     gap: 20px;
@@ -344,7 +361,7 @@ form button:hover {
     color: #ef8e73;
 }
 
-/* Footer */
+/* footer */
 footer {
     background-color: #604f6f;
     color: #ddd;
