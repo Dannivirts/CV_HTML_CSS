@@ -4,58 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>Danna CV</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <h1>Curriculum Vitae</h1>
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                <span>Danna</span>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <span>Danna</span>
+            </div>
+                <div class="links">
+                <a href="#index">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#service">Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        </nav>
+    </header>
 
-            </div>
-            <div class="links">
-                <div class="link"><a href="">Home</a></div>
-                <div class="link"><a href="">About</a></div>
-                <div class="link"><a href="">Skills</a></div>
-                <div class="link"><a href="">Service</a></div>
-                <div class="link"><a href="">Contact</a></div>
-            </div>
-        </div>
-        <i class="fa-solid fa-bars hamburg"></i>
-        <div class="dropdown">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Skills</a>
-            <a href="">Service</a>
-            <a href="">Contact</a>
-            <i class="fa-solid fa-xmark cancel"></i>
-        </div>
-    </nav>
-    <section>
+    <section id="about">
         <div class="main-container">
             <div class="image">
-                <img src="yo.png" alt="">
+                <img src="images/yo.png" alt="Danna's Profile Picture">
             </div>
             <div class="content">
-                <h1>Hey I'm <span>Danna</span></h1>
-                <h2 class="typing-text">I'm a <span></span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam minus impedit eos, commodi suscipit dolorum velit, delectus cumque rem repellendus culpa est ipsam aut dolore, animi doloribus sint accusantium rerum?</p> 
+                <h1>Hey, I'm <span>Danna</span></h1>
+                <p>I'm a Cybersecurity student at Instituto Tecnológico de Chihuahua II. Passionate about technology and
+                    web development.</p>
                 <div class="social-links">
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
-                <div class="btn">
-                    <button>Download CV</button>
-                </div>
+                <button class="btn">Download CV</button>
             </div>
-
         </div>
-
     </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">HTML - 80%</div>
+            <div class="skill">CSS - 75%</div>
+            <div class="skill">Database Management - 70%</div>
+            <div class="skill">Cybersecurity Fundamentals - 65%</div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education - Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Instituto Tecnológico de Chihuahua II</h3>
+                <p>Bachelor in Computer Systems Engineering, Cybersecurity</p>
+                <span>2021 - Present</span>
+            </div>
+            <div class="timeline-item">
+                <h3>UACH</h3>
+                <p>Diploma in English Language</p>
+                <span>2019</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Danna. All rights reserved.</p>
+    </footer>
+
+
 </body>
 
 </html>
